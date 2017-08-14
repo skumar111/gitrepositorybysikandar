@@ -15,28 +15,29 @@ public class ServiceImpl implements UserService
 	@Override
 	public int addUser(UserInfo userInfo)
 	{
-	
-		
 		int basePremuem =5000;
 		int totalPremium=0;
 		
-
-		if(userInfo.getUser_age() >= 18 && userInfo.getUser_age()< 25){ 
+		if(userInfo.getUser_age() >= 18 && userInfo.getUser_age()< 25)
+		{ 
 			totalPremium += basePremuem + ((10 * basePremuem)/100);
 		} 
 		
-		if(userInfo.getUser_age() >= 25 && userInfo.getUser_age()< 30){
+		if(userInfo.getUser_age() >= 25 && userInfo.getUser_age()< 30)
+		{
 			totalPremium += basePremuem + ((10 * basePremuem)/100);
 			totalPremium += ((10 * totalPremium)/100);
 		}
 		
-		if(userInfo.getUser_age() >= 30 && userInfo.getUser_age() < 35){
+		if(userInfo.getUser_age() >= 30 && userInfo.getUser_age() < 35)
+		{
 			totalPremium += basePremuem + ((10 * basePremuem)/100);
 			totalPremium += ((10 * totalPremium)/100);
 			totalPremium += ((10 * totalPremium)/100);
 		}
 		
-		if(userInfo.getUser_age() >= 35 && userInfo.getUser_age() < 40){
+		if(userInfo.getUser_age() >= 35 && userInfo.getUser_age() < 40)
+		{
 			totalPremium += basePremuem + ((10 * basePremuem)/100);
 			totalPremium += ((10 * totalPremium)/100);
 			totalPremium += ((10 * totalPremium)/100);
