@@ -26,8 +26,7 @@ public class TestController
 	{	
  		return "home"; 
 	}
-	//this is upendra
-    ///Hi this is my first commit 
+	//sikandar
 	@RequestMapping(value="/check", method = RequestMethod.POST)
 	public ModelAndView getQuato(HttpServletRequest req,HttpServletResponse resp)
 	{	
